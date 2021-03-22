@@ -11,61 +11,74 @@
     <h1 id="title">Qual a melhor linguagem para um iniciante em programação?</h1>
     <p id="description">Muitas linguagens de programação estão disponíveis em cursos online. Gostaríamos de sua opinião sobre a melhor linguagem para novos estudantes de teconoliga.</p>
         <form id="survey-form">
-            <label id="name-label" for="name">
-                Nome
-            </label>
-                <input id="name" type="text" name="name" placeholder="Digite o seu nome" required="">
-            <label id="email-label" for="email">
-                E-mail
-            </label>
-                <input id="email" type="email" name="email" placeholder="Digite o seu e-mail" required="">
-            <label id="number-label" for="number">
-                Idade
-            </label>
-                <input id="number" type="number" name="number" min="12" max="99" placeholder="Digite a sua idade" required="">
-
-<!-- HTML REVISADO ATÉ AQUI
-- FALTA DROPDOWN
-- TEXT AREA
-- RADIO BUTTONS
--->
-                <div>Experiência</div>
-                <label for="estudante">
-                    <input id="estudante" type="radio" name="experiencia">Estudante
+            <div>
+                <label id="name-label" for="name">
+                    Nome
                 </label>
-                <label for="junior">
-                    <input id="junior" type="radio" name="experiencia">Junior
+                    <input id="name" type="text" name="name" placeholder="Digite o seu nome" required="">
+            </div>
+            <div>
+                <label id="email-label" for="email">
+                    E-mail
                 </label>
-                <label for="pleno">
-                    <input id="pleno" type="radio" name="experiencia">Pleno
+                    <input id="email" type="email" name="email" placeholder="Digite o seu e-mail" required="">
+            </div>
+            <div>
+                <label id="number-label" for="number">
+                    Idade
                 </label>
-                <label for="senior">
-                    <input id="senior" type="radio" name="experiencia">Senior
+                    <input id="number" type="number" name="number" min="12" max="99" placeholder="Digite a sua idade" required="">
+            </div>
+            <div>
+                <p>Qual o seu nível de graduação?</p>
+                <select id="dropdown" name="graduacao" required="">
+                    <option>Selecione sua formação</option>
+                    <option value="fundamental">Fundamental</option>
+                    <option value="medio">Ensino Médio</option>
+                    <option value="graduacao">Graduação</option>
+                    <option value="posgrad">Pós-Graduação</option>
+                </select>
+            </div>
+                <div>
+                <p>Qual a sua experiencia?</p>
+                    <label for="estudante">
+                        <input id="estudante" type="radio" name="experiencia" value="estudante">Estudante
+                    </label>
+                    <label for="junior">
+                        <input id="junior" type="radio" name="experiencia" value="junior">Junior
+                    </label>
+                    <label for="pleno">
+                        <input id="pleno" type="radio" name="experiencia" value="pleno">Pleno
+                    </label>
+                    <label for="senior">
+                        <input id="senior" type="radio" name="experiencia" value="senior">Senior
+                    </label>
+                </div>
+            <div>
+            <p>Vote nas linguagens abaixo:</p>
+                <label for="javascript">
+                    <input id="javascript" type="checkbox" name="linguagem" value="javascript">Javascript
                 </label>
-            <div>Linguagens</div>
-            <label for="javascript">
-                <input id="javascript" type="checkbox" name="linguagem" value="javascript">Javascript
-            </label>
-            <label for="python">
-                <input id="python" type="checkbox" name="linguagem" value="python">Python
-            </label>
-            <label for="java">
-                <input id="java" type="checkbox" name="linguagem" value="java">Java
-            </label>
-            <label for="csharp">
-                <input id="csharp" type="checkbox" name="linguagem" value="csharp">C#
-            </label>
-            <label for="php">
-                <input id="php" type="checkbox" name="linguagem" value="php">PHP
-            </label>
-            <div>Comentários</div>
-                <input type="text" placeholder="Deixe seus comentários">
-            <div>Enviar</div>
+                <label for="python">
+                    <input id="python" type="checkbox" name="linguagem" value="python">Python
+                </label>
+                <label for="java">
+                    <input id="java" type="checkbox" name="linguagem" value="java">Java
+                </label>
+                <label for="csharp">
+                    <input id="csharp" type="checkbox" name="linguagem" value="csharp">C#
+                </label>
+                <label for="php">
+                    <input id="php" type="checkbox" name="linguagem" value="php">PHP
+                </label>
+            </div>
+            <div>
+            <p>Comentários</p>
+                <textarea id="comments" name="comment" placeholder="Deixe seus comentários"></textarea>
+            </div>
+            <div>
                 <button type="submit" id="submit">Enviar</button>
-
-
-
+            </div>
     </form>
-    
 </body>
 </html>

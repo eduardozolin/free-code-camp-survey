@@ -1,0 +1,33 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: url(/img/bg.jpg);
+    opacity: 0.3;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1, #description {
+    text-align: center;
+    width: 600px;
+    height: auto;
+}
+
+#survey-form {
+    padding: 2.5rem;
+}
