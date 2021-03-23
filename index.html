@@ -10,28 +10,28 @@
 <body>
     <h1 id="title">Qual a melhor linguagem para um iniciante em programação?</h1>
     <p id="description">Muitas linguagens de programação estão disponíveis em cursos online. Gostaríamos de sua opinião sobre a melhor linguagem para novos estudantes de teconoliga.</p>
-        <form id="survey-form">
+        <form id="survey-form" class="container">
             <div>
-                <label id="name-label" for="name">
-                    Nome
+                <label id="name-label" for="name" class="linejump">
+                    <p id="headertext">Nome</p>
                 </label>
-                    <input id="name" type="text" name="name" placeholder="Digite o seu nome" required="">
+                    <input id="name" type="text" name="name" placeholder="Digite o seu nome" required="" class="answertext">
             </div>
             <div>
-                <label id="email-label" for="email">
-                    E-mail
+                <label id="email-label" for="email" class="linejump">
+                    <p id="headertext">E-mail</p>
                 </label>
-                    <input id="email" type="email" name="email" placeholder="Digite o seu e-mail" required="">
+                    <input id="email" type="email" name="email" placeholder="Digite o seu e-mail" required="" class="answertext">
             </div>
             <div>
-                <label id="number-label" for="number">
-                    Idade
+                <label id="number-label" for="number" class="linejump">
+                    <p id="headertext">Idade</p>
                 </label>
-                    <input id="number" type="number" name="number" min="12" max="99" placeholder="Digite a sua idade" required="">
+                    <input id="number" type="number" name="number" min="12" max="99" placeholder="Digite a sua idade" required="" class="answertext">
             </div>
             <div>
-                <p>Qual o seu nível de graduação?</p>
-                <select id="dropdown" name="graduacao" required="">
+                <p id="headertext">Qual o seu nível de graduação?</p>
+                <select id="dropdown" name="graduacao" required="" class="answertext">
                     <option>Selecione sua formação</option>
                     <option value="fundamental">Fundamental</option>
                     <option value="medio">Ensino Médio</option>
@@ -40,7 +40,7 @@
                 </select>
             </div>
                 <div>
-                <p>Qual a sua experiencia?</p>
+                <p id="headertext">Qual a sua experiencia?</p>
                     <label for="estudante">
                         <input id="estudante" type="radio" name="experiencia" value="estudante">Estudante
                     </label>
@@ -54,30 +54,30 @@
                         <input id="senior" type="radio" name="experiencia" value="senior">Senior
                     </label>
                 </div>
-            <div>
-            <p>Vote nas linguagens abaixo:</p>
-                <label for="javascript">
+            <div class="checkbox">
+            <p id="headertext">Vote nas linguagens abaixo:</p>
+                <label for="javascript" class="linejump">
                     <input id="javascript" type="checkbox" name="linguagem" value="javascript">Javascript
                 </label>
-                <label for="python">
+                <label for="python" class="linejump">
                     <input id="python" type="checkbox" name="linguagem" value="python">Python
                 </label>
-                <label for="java">
+                <label for="java" class="linejump">
                     <input id="java" type="checkbox" name="linguagem" value="java">Java
                 </label>
-                <label for="csharp">
+                <label for="csharp" class="linejump">
                     <input id="csharp" type="checkbox" name="linguagem" value="csharp">C#
                 </label>
-                <label for="php">
+                <label for="php" class="linejump">
                     <input id="php" type="checkbox" name="linguagem" value="php">PHP
                 </label>
             </div>
             <div>
-            <p>Comentários</p>
-                <textarea id="comments" name="comment" placeholder="Deixe seus comentários"></textarea>
+            <p id="headertext">Comentários</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Deixe seus comentários"></textarea>
             </div>
             <div>
-                <button type="submit" id="submit">Enviar</button>
+                <button type="submit" id="submit">ENVIAR</button>
             </div>
     </form>
 </body>
